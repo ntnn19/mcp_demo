@@ -1,0 +1,29 @@
+First, read `AGENT.md` in the repository root and follow it for the whole task.
+
+## Task 1: Gene research
+
+I am interested in learning about the following human gene: Egfr.
+
+Use the connected remote MCP servers (Open Targets, STRING, RCSB PDB) to answer these questions:
+
+1. To which diseases is it linked?
+2. Who are its interaction partners?
+3. Was its structure solved?
+
+Base every answer on actual tool calls. If a server is unavailable or returns nothing, say so instead of answering from memory.
+
+## Task 2: Summary app
+
+Write a minimal Python app that summarizes the findings from Task 1 in figures and plots, exactly as specified in `AGENT.md` (file layout, `data/findings.json` schema, CLI, three PNG figures, smoke test, README). Run the tests and the CLI, and check the output visually before committing.
+
+## Task 3: Pull request
+
+When the app works, create a pull request for it automatically.
+
+## PR Workflow
+1. Use the title format: `<Title>`.
+2. Follow `.github/pull_request_template.md` strictly if present.
+3. Write an accurate description of what changed and why.
+4. Keep the PR description updated with `gh pr edit` when subsequent changes are requested.
+
+When you are done, reply with the PR URL and a short summary: the answers to the three questions, and any gaps or failed tool calls.
