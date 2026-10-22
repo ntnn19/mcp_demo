@@ -1,0 +1,52 @@
+{
+  "gene": {
+    "symbol": "MAPKAPK3",
+    "name": "MAPK activated protein kinase 3",
+    "ensembl_id": "ENSG00000114738",
+    "uniprot_id": "Q16644"
+  },
+  "diseases": [
+    {"name": "patterned macular dystrophy 3", "id": "MONDO_0014920", "score": 0.5467420644706433},
+    {"name": "patterned macular dystrophy", "id": "MONDO_0020381", "score": 0.3695798546847018},
+    {"name": "abnormality of the skeletal system", "id": "HP_0000924", "score": 0.2467507785305973},
+    {"name": "schizophrenia", "id": "MONDO_0005090", "score": 0.19480367329328213},
+    {"name": "Alzheimer disease", "id": "MONDO_0004975", "score": 0.1766174098481806},
+    {"name": "inherited retinal dystrophy", "id": "MONDO_0019118", "score": 0.1128142506425052},
+    {"name": "cystitis", "id": "MONDO_0006032", "score": 0.11114443990885456},
+    {"name": "placental abruption", "id": "MONDO_0004846", "score": 0.09182618325802709},
+    {"name": "central nervous system cancer", "id": "MONDO_0002714", "score": 0.08555773635950846},
+    {"name": "glioma", "id": "MONDO_0021042", "score": 0.08555773635950846}
+  ],
+  "interactions": [
+    {"partner": "MAPK14", "score": 0.999},
+    {"partner": "MAPK11", "score": 0.999},
+    {"partner": "MAPKAPK2", "score": 0.999},
+    {"partner": "PRKY", "score": 0.999},
+    {"partner": "HSPB1", "score": 0.997},
+    {"partner": "MAPK13", "score": 0.975},
+    {"partner": "MAPK12", "score": 0.932},
+    {"partner": "ATF4", "score": 0.904},
+    {"partner": "RCSD1", "score": 0.83},
+    {"partner": "DCX", "score": 0.826}
+  ],
+  "structures": {
+    "solved": true,
+    "total_entries": 5,
+    "entries": [
+      {"pdb_id": "3FHR", "method": "X-ray", "resolution": 1.9, "title": "High resolution crystal structure of mitogen-activated protein kinase-activated protein kinase 3 (MK3)-inhibitor complex", "year": 2009},
+      {"pdb_id": "3FXW", "method": "X-ray", "resolution": 2.0, "title": "High resolution crystal structure of mitogen-activated protein kinase-activated protein kinase 3/inhibitor 2 complex", "year": 2010},
+      {"pdb_id": "3R1N", "method": "X-ray", "resolution": 2.09, "title": "MK3 kinase bound to Compound 5b", "year": 2011},
+      {"pdb_id": "3SHE", "method": "X-ray", "resolution": 2.25, "title": "Novel ATP-competitive MK2 inhibitors with potent biochemical and cell-based activity throughout the series", "year": 2011},
+      {"pdb_id": "7NRB", "method": "X-ray", "resolution": 1.9, "title": "Re-refinement of MK3-inhibitor complex", "year": 2022}
+    ]
+  },
+  "provenance": [
+    {"server": "Open Targets", "tool": "search_entities", "query": "MAPKAPK3 -> ENSG00000114738", "retrieved_at": "2026-10-22T23:12:57Z"},
+    {"server": "UniProt", "tool": "search_proteins", "query": "gene_exact:MAPKAPK3 AND organism_id:9606 -> Q16644", "retrieved_at": "2026-10-22T23:12:57Z"},
+    {"server": "Open Targets", "tool": "query_open_targets_graphql", "query": "target.associatedDiseases for ENSG00000114738, top 10 by score (132 total)", "retrieved_at": "2026-10-22T23:12:57Z"},
+    {"server": "STRING", "tool": "string_all_interaction_partners", "query": "MAPKAPK3 human (taxon 9606) interaction partners (83 above cutoff)", "retrieved_at": "2026-10-22T23:12:57Z"},
+    {"server": "RCSB PDB", "tool": "rcsb_query_attribute + rcsb_search_request", "query": "experimental entries with UniProt accession Q16644 -> count 5 (X-ray facet)", "retrieved_at": "2026-10-22T23:12:57Z"},
+    {"server": "RCSB PDB", "tool": "rcsb_search_request", "query": "entries for Q16644 sorted by initial release date -> 3FHR, 3FXW, 3R1N, 3SHE, 7NRB", "retrieved_at": "2026-10-22T23:12:57Z"},
+    {"server": "RCSB PDB", "tool": "rcsb_get_entries", "query": "metadata (method, resolution, title, year) for the 5 MAPKAPK3 structures", "retrieved_at": "2026-10-22T23:12:57Z"}
+  ]
+}
