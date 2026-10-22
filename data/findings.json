@@ -1,0 +1,62 @@
+{
+  "gene": {
+    "symbol": "EGFR",
+    "name": "epidermal growth factor receptor",
+    "ensembl_id": "ENSG00000146648",
+    "uniprot_id": "P00533"
+  },
+  "diseases": [
+    {"name": "non-small cell lung carcinoma", "id": "MONDO_0005233", "score": 0.8503239816603523},
+    {"name": "lung adenocarcinoma", "id": "MONDO_0005061", "score": 0.7744562914488016},
+    {"name": "cancer", "id": "MONDO_0004992", "score": 0.7369034892013269},
+    {"name": "head and neck squamous cell carcinoma", "id": "MONDO_0010150", "score": 0.7252247339566977},
+    {"name": "lung cancer", "id": "MONDO_0008903", "score": 0.7173442514015181},
+    {"name": "breast cancer", "id": "MONDO_0007254", "score": 0.6827418446468533},
+    {"name": "colorectal adenocarcinoma", "id": "MONDO_0005008", "score": 0.6754513550151908},
+    {"name": "glioblastoma", "id": "MONDO_0018177", "score": 0.664960901578177},
+    {"name": "neoplasm", "id": "MONDO_0005070", "score": 0.651167827659101},
+    {"name": "inflammatory skin and bowel disease, neonatal, 2", "id": "MONDO_0014481", "score": 0.6421270511949738}
+  ],
+  "interactions": [
+    {"partner": "CSK", "score": 0.999},
+    {"partner": "SOS2", "score": 0.999},
+    {"partner": "STUB1", "score": 0.999},
+    {"partner": "PIK3R2", "score": 0.999},
+    {"partner": "HBEGF", "score": 0.999},
+    {"partner": "NCK2", "score": 0.999},
+    {"partner": "PLCG1", "score": 0.999},
+    {"partner": "EREG", "score": 0.999},
+    {"partner": "TRAF2", "score": 0.999},
+    {"partner": "KRAS", "score": 0.999}
+  ],
+  "structures": {
+    "solved": true,
+    "total_entries": 391,
+    "entries": [
+      {"pdb_id": "1IVO", "method": "X-ray", "resolution": 3.3, "title": "Crystal Structure of the Complex of Human Epidermal Growth Factor and Receptor Extracellular Domains.", "year": 2002},
+      {"pdb_id": "1M14", "method": "X-ray", "resolution": 2.6, "title": "Tyrosine Kinase Domain from Epidermal Growth Factor Receptor", "year": 2002},
+      {"pdb_id": "1M17", "method": "X-ray", "resolution": 2.6, "title": "Epidermal Growth Factor Receptor tyrosine kinase domain with 4-anilinoquinazoline inhibitor erlotinib", "year": 2002},
+      {"pdb_id": "1MOX", "method": "X-ray", "resolution": 2.5, "title": "Crystal Structure of Human Epidermal Growth Factor Receptor (residues 1-501) in complex with TGF-alpha", "year": 2003},
+      {"pdb_id": "1NQL", "method": "X-ray", "resolution": 2.8, "title": "Structure of the extracellular domain of human epidermal growth factor (EGF) receptor in an inactive (low pH) complex with EGF.", "year": 2003},
+      {"pdb_id": "1XKK", "method": "X-ray", "resolution": 2.4, "title": "EGFR kinase domain complexed with a quinazoline inhibitor- GW572016", "year": 2004},
+      {"pdb_id": "1YY9", "method": "X-ray", "resolution": 2.605, "title": "Structure of the extracellular domain of the epidermal growth factor receptor in complex with the Fab fragment of cetuximab/Erbitux/IMC-C225", "year": 2005},
+      {"pdb_id": "1Z9I", "method": "NMR", "resolution": null, "title": "A Structural Model for the Membrane-Bound Form of the Juxtamembrane Domain of the Epidermal Growth Factor Receptor", "year": 2005},
+      {"pdb_id": "2EB2", "method": "X-ray", "resolution": 2.5, "title": "Crystal structure of mutated EGFR kinase domain (G719S)", "year": 2008},
+      {"pdb_id": "2EB3", "method": "X-ray", "resolution": 2.84, "title": "Crystal structure of mutated EGFR kinase domain (L858R) in complex with AMPPNP", "year": 2008},
+      {"pdb_id": "2GS2", "method": "X-ray", "resolution": 2.8, "title": "Crystal Structure of the active EGFR kinase domain", "year": 2006},
+      {"pdb_id": "2GS7", "method": "X-ray", "resolution": 2.6, "title": "Crystal Structure of the inactive EGFR kinase domain in complex with AMP-PNP", "year": 2006},
+      {"pdb_id": "2ITN", "method": "X-ray", "resolution": 2.47, "title": "Crystal structure of EGFR kinase domain G719S mutation in complex with AMP-PNP", "year": 2007},
+      {"pdb_id": "2ITO", "method": "X-ray", "resolution": 3.25, "title": "Crystal structure of EGFR kinase domain G719S mutation in complex with Iressa", "year": 2007},
+      {"pdb_id": "2ITP", "method": "X-ray", "resolution": 2.74, "title": "Crystal structure of EGFR kinase domain G719S mutation in complex with AEE788", "year": 2007}
+    ]
+  },
+  "provenance": [
+    {"server": "Open Targets", "tool": "search_entities", "query": "EGFR -> ENSG00000146648", "retrieved_at": "2026-10-21T08:50:33Z"},
+    {"server": "Open Targets", "tool": "get_protein (UniProt P00533)", "query": "UniProt P00533 -> EGFR gene name confirmation", "retrieved_at": "2026-10-21T08:50:33Z"},
+    {"server": "Open Targets", "tool": "query_open_targets_graphql", "query": "target.associatedDiseases for ENSG00000146648, top 10 by score", "retrieved_at": "2026-10-21T08:50:33Z"},
+    {"server": "STRING", "tool": "string_interactions_query_set", "query": "EGFR human (taxon 9606) interaction partners", "retrieved_at": "2026-10-21T08:50:33Z"},
+    {"server": "RCSB PDB", "tool": "rcsb_seqcoord_alignments", "query": "P00533 (UNIPROT) -> PDB_ENTITY mapping", "retrieved_at": "2026-10-21T08:50:33Z"},
+    {"server": "RCSB PDB", "tool": "rcsb_query_attribute + rcsb_search_request", "query": "experimental entries with UniProt accession P00533 -> count 391", "retrieved_at": "2026-10-21T08:50:33Z"},
+    {"server": "RCSB PDB", "tool": "rcsb_get_entries", "query": "metadata (method, resolution, title, year) for 15 representative EGFR structures", "retrieved_at": "2026-10-21T08:50:33Z"}
+  ]
+}
